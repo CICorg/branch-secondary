@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>none</title>
+  <link rel="stylesheet" href="../res/bootstrap@5.0.0-alpha2.min.css">
+  <link rel="stylesheet" href="../res/chartist.min.css">
+  <!--Text-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <style type="text/css" media="all">
+    * {
+      /*font-family: 'Poppins', sans-serif;*/
+      font-family: 'Ubuntu', sans-serif;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-left: -2rem;
+    }
+
+    li {
+      text-align: center;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+    }
+
+    button:focus {
+      outline: none;
+      border: none;
+      transform: rotate(90deg);
+      transition: all 1s;
+    }
+
+    .centerme {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header {
+      box-shadow: .1rem .1rem .8rem grey;
+      position: fixed;
+      top: 0;
+      z-index: 999;
+    }
+
+    .scrollbar {
+      width: 360px;
+      height: 3rem;
+      overflow: scroll;
+    }
+
+    .scrollbar-inner {
+      max-height: 3rem;
+      min-width: 100rem;
+      line-height: 3rem;
+    }
+
+    .menubar {
+      position: fixed;
+      top: 4rem;
+      width: 80%;
+      height: 90%;
+      overflow: scroll;
+    }
+
+    .menubar-inner {
+      min-height: 50rem;
+      max-width: 100%;
+      margin-left: -0rem;
+    }
+
+    .menubarAni {
+      animation: ani1 1s 1;
+    }
+
+    @keyframes ani1 {
+      from {
+        margin-left: -20rem;
+      }
+
+      to {
+        margin-left: 0rem;
+      }
+    }
+
+    #main {
+      margin-top: 10rem;
+    }
+
+    .search-box {
+      width: 200px;
+      height: 3rem;
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+    }
+
+    /* Private Clasess*/
+    .article-head {
+      margin-top: .2rem;
+      font-size: 1.2rem;
+      opacity: .9;
+    }
+
+    .article-body {
+      font-size: .8rem;
+      margin: 0;
+      padding: 0;
+      opacity: .7;
+    }
+
+    .article-body::after {}
+
+
+    /* Media Quarries */
+    @media screen and (min-width:400px) {
+      body {}
+
+      .logo-img {
+        width: 100px !important;
+      }
+
+      .scrollbar {
+        width: 100%;
+      }
+
+      .search-box {
+        width: 300px;
+        height: 3rem;
+        position: fixed;
+        top: 1rem;
+        left: 15rem;
+      }
+
+      li {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="container-fluid header bg-white">
+    <div class="row bg-white" style="height: 3rem">
+      <!-- menu box -->
+      <div class="col centerme">
+        <button id="menuBtn" onclick="show()" class="p-3 menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+      </div>
+      <!-- logo box -->
+      <div class="col centerme">
+        <img src="../media/logo.jpeg" alt="" class="w-100 logo-img">
+      </div>
+      <!-- search box -->
+      <div class="col centerme">
+        <button class="p-3 menu-btn" onclick="search()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- scrollbar box -->
+    <div class="row scrollbar bg-light">
+      <div class="col scrollbar-inner">
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+      </div>
+    </div>
+  </div>
+  <!-- header -->
+  <!--- Menu bar (hidden)-->
+  <div class="menubar" id="menubar">
+    <div class="menubar-inner bg-white" id="menubarInner">
+      <br> <br>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+    </div>
+  </div>
+  <!--search bar(hidden)-->
+  <div class="form-group search-box" id="sb">
+    <input type="text" class="form-control" placeholder="Search here...">
+  </div>
+  <section id="main" class="container-fluid">
+    <div class="row">
+      <!-- Article Are here -->
+      <div class="col-md-6">
+        <div class="row">
+          <!-- Article C1 -->
+          <div class="col-12">
+            <div class="card">
+              <img class="card-img-top" src="../media/M.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text text-secondary" style="font-size: .8rem">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                <a href="#" style="color: green">read more</a>
+              </div>
+            </div>
+          </div>
+          <!-- Article C2 -->
+          <div class="col-12 mt-3">
+            <!--<h3 class="py-3 text-info">Articles</h3>-->
+            <div class="row">
+              <div class="col">
+                <h3 class="py-3 text-info">Articles</h3>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Article C2.1-->
+              <div class="col my-1">
+                <h4 class="article-head">Lorem ipsum dolor sit amet.</h4>
+                <p class="article-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, placeat
+                  <a href="#" class="mx-3" style="color: green">read more</a>
+                </p>
+                <a href="#" style="color: green">...</a>
+              </div>
+              <hr>
+              <!-- Article C2.2-->
+              <div class="col my-1">
+                <h4 class="article-head">Lorem ipsum dolor sit amet.</h4>
+                <p class="article-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, placeat
+                  <a href="#" class="mx-3" style="color: green">read more</a>
+                </p>
+                <a href="#" style="color: green">...</a>
+              </div>
+              <hr>
+              <!-- Article C2.2-->
+              <div class="col my-1">
+                <h4 class="article-head">Lorem ipsum dolor sit amet.</h4>
+                <p class="article-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, placeat
+                  <a href="#" class="mx-3" style="color: green">read more</a>
+                </p>
+                <a href="#" style="color: green">...</a>
+              </div>
+              <hr>
+              <!-- Article C2.2-->
+            </div>
+          </div>
+        </div>
+        <!-- Others are here -->
+        <div class="col-md-6"></div>
+      </div>
+  </section>
+  <script src="../code/code.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
