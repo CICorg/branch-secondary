@@ -1,0 +1,143 @@
+/* Main page(cic.hml) styling*/
+
+/*Default value styling*/
+* {
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: -2rem;
+}
+
+li {
+  text-align: center;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+hr {
+  opacity: .1 !important;
+}
+
+button:focus {
+  outline: none;
+  border: none;
+}
+
+.centerme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-none {
+  user-select: none;
+}
+
+.header {
+  box-shadow: .1rem .1rem .8rem grey;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.scrollbar {
+  width: 400px;
+  height: 3rem;
+  overflow: scroll;
+}
+
+.scrollbar-inner {
+  max-height: 3rem;
+  min-width: 100rem;
+  line-height: 3rem;
+}
+
+.menubar {
+  position: fixed;
+  top: 4rem;
+  width: 80%;
+  height: 90%;
+  overflow: scroll;
+}
+
+.menubar-inner {
+  min-height: 50rem;
+  max-width: 100%;
+  margin-left: -0rem;
+}
+
+.menubarAni {
+  animation: ani1 1s 1;
+}
+
+#main {
+  margin-top: 10rem;
+}
+
+#menubar,
+#sb {
+  z-index: 999;
+}
+
+.search-box {
+  width: 250px;
+  height: 3rem;
+  position: fixed;
+  top: .5rem;
+  left: 1rem;
+}
+
+/* Private Clasess*/
+.article-head {
+  margin-top: .2rem;
+  font-size: 1.2rem;
+  opacity: .9;
+}
+
+.article-body {
+  font-size: .8rem;
+  margin: 0;
+  padding: 0;
+  opacity: .7;
+}
+
+/* AS */
+.degine01 {
+  width: 100%;
+  height: 2px;
+  opacity: .5;
+  background: grey;
+  border-radius: .1rem;
+  ;
+}
+
+.notice {
+  color: orange;
+  user-select: none;
+  background: whitesmoke;
+}
+
+/*Animation Started*/
+
+@keyframes ani1 {
+  from {
+    margin-left: -20rem;
+  }
+
+  to {
+    margin-left: 0rem;
+  }
+}
+
+/*Animation */

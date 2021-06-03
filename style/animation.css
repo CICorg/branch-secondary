@@ -1,0 +1,13 @@
+/*Animation (cic.html) Started*/
+
+@keyframes ani1 {
+  from {
+    margin-left: -20rem;
+  }
+
+  to {
+    margin-left: 0rem;
+  }
+}
+
+/*Animation End*/

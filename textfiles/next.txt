@@ -1,3 +1,6 @@
-solving the bugs of pages/cic.html - menu(z-index);
-including javascript functionality in cic.html file;
-bug accuring in cic.html - header/scrollbar,header/searchbox(input);l
+//solving the bugs of pages/cic.html - menu(z-index);
+//including javascript functionality in cic.html file;
+//bug accuring in cic.html - header/scrollbar,header/searchbox(input);
+// wanna change design (header);
+work on text/weight, opacity,smooting;
+when th menu nar opened(menu btn turns into close btn(and close the panal); 

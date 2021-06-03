@@ -4,155 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>none</title>
+  <title>CIC - Homepage</title>
+  <!-- Bootstap 5.0.0-->
   <link rel="stylesheet" href="../res/bootstrap@5.0.0-alpha2.min.css">
   <link rel="stylesheet" href="../res/chartist.min.css">
-  <!--Text-->
+  <!--Google fonts-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <!-- for mediaQuarries -->
-  <link rel="stylesheet" href="style/mediaQuarries.css" type="text/css" media="all" />
-  <style type="text/css" media="all">
-    * {
-      /*font-family: 'Poppins', sans-serif;*/
-      font-family: 'Ubuntu', sans-serif;
-
-    }
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-
-    ul {
-      list-style-type: none;
-      margin-left: -2rem;
-    }
-
-    li {
-      text-align: center;
-    }
-
-    button {
-      background: transparent;
-      border: none;
-    }
-
-    button:focus {
-      outline: none;
-      border: none;
-      transform: rotate(90deg);
-      transition: all 1s;
-    }
-
-    .centerme {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .user-none {
-      user-select: none;
-    }
-
-    .header {
-      box-shadow: .1rem .1rem .8rem grey;
-      position: fixed;
-      top: 0;
-      z-index: 999;
-    }
-
-    .scrollbar {
-      width: 400px;
-      height: 3rem;
-      overflow: scroll;
-    }
-
-    .scrollbar-inner {
-      max-height: 3rem;
-      min-width: 100rem;
-      line-height: 3rem;
-    }
-
-    .menubar {
-      position: fixed;
-      top: 4rem;
-      width: 80%;
-      height: 90%;
-      overflow: scroll;
-    }
-
-    .menubar-inner {
-      min-height: 50rem;
-      max-width: 100%;
-      margin-left: -0rem;
-    }
-
-    .menubarAni {
-      animation: ani1 1s 1;
-    }
-
-    @keyframes ani1 {
-      from {
-        margin-left: -20rem;
-      }
-
-      to {
-        margin-left: 0rem;
-      }
-    }
-
-    #main {
-      margin-top: 10rem;
-    }
-
-    #menubar,
-    #sb {
-      z-index: 999;
-    }
-
-    .search-box {
-      width: 250px;
-      height: 3rem;
-      position: fixed;
-      top: .5rem;
-      left: 1rem;
-    }
-
-    /* Private Clasess*/
-    .article-head {
-      margin-top: .2rem;
-      font-size: 1.2rem;
-      opacity: .9;
-    }
-
-    .article-body {
-      font-size: .8rem;
-      margin: 0;
-      padding: 0;
-      opacity: .7;
-    }
-
-    /* AS */
-    .degine01 {
-      width: 100%;
-      height: 2px;
-      opacity: .5;
-      background: grey;
-      border-radius: .1rem;
-      ;
-    }
-
-    .notice {
-      color: orange;
-      user-select: none;
-      background: whitesmoke;
-    }
-
-    hr {
-      opacity: .1!important;
-    }
-  </style>
+  <link rel="stylesheet" href="style/mediaQuarries.css">
+  <!-- for Animation -->
+  <link rel="stylesheet" href="../style/animation.css">
+  <!-- for Mstyling -->
+  <link rel="stylesheet" href="../style/cicMain.css">
 </head>
 
 <body>
@@ -196,31 +60,21 @@
       </div>
     </div>
   </div>
-  <!-- header -->
+  <!-- header End-->
   <!--- Menu bar (hidden)-->
   <div class="menubar" id="menubar">
     <div class="menubar-inner bg-white" id="menubarInner">
       <br> <br>
-      <a href="#" class="p-3">Home</a>
-      <hr>
-      <a href="#" class="p-3">Home</a>
-      <hr>
-      <a href="#" class="p-3">Home</a>
-      <hr>
-      <a href="#" class="p-3">Home</a>
-      <hr>
-      <a href="#" class="p-3">Home</a>
-      <hr>
-      <a href="#" class="p-3">Home</a>
-      <hr>
-      <a href="#" class="p-3">Home</a>
-      <hr>
-      <a href="#" class="p-3">Home</a>
-      <hr>
-      <a href="#" class="p-3">Home</a>
-      <hr>
-      <a href="#" class="p-3">Home</a>
-      <hr>
+      <a href="#" class="p-3">Home</a><hr>
+      <a href="#" class="p-3">Home</a><hr>
+      <a href="#" class="p-3">Home</a><hr>
+      <a href="#" class="p-3">Home</a><hr>
+      <a href="#" class="p-3">Home</a><hr>
+      <a href="#" class="p-3">Home</a><hr>
+      <a href="#" class="p-3">Home</a><hr>
+      <a href="#" class="p-3">Home</a><hr>
+      <a href="#" class="p-3">Home</a><hr>
+      <a href="#" class="p-3">Home</a><hr>
     </div>
   </div>
   <!--search bar(hidden)-->
@@ -248,11 +102,12 @@
           <div class="col-12 mt-3">
             <div class="row">
               <div class="col">
+                <!-- Row for a article heading-->
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col">
                     <h3 class="py-3 text-success font-weight-bold" style="letter-spacing: 1px;">Articles</h3>
                   </div>
-                  <div class="col-9 d-flex align-items-center justify-content-start">
+                  <div class="col d-flex align-items-center justify-content-start">
                     <div class="degine01"></div>
                   </div>
                 </div>
@@ -309,8 +164,39 @@
             </div>
           </div>
         </div>
-        <!-- Others are here -->
-        <div class="col-md-6"></div>
+        <!-- Others column of main are here -->
+        <div class="col-md-6">
+          <!-- Row for a article heading-->
+          <div class="row">
+            <div class="col">
+              <h3 class="py-3 text-success font-weight-bold" style="letter-spacing: 1px;">Quick Links</h3>
+            </div>
+            <div class="col d-flex align-items-center justify-content-start">
+              <div class="degine01"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul style="list-style: none; margin: 0; padding: 0">
+                <li class="d-block">
+                  <img src="../media/svgs/languageicon.svg">
+                  <h4 class="d-inline" style="margin: 1rem"> Language Support
+                  </h4>
+                </li>
+                <li class="d-block">
+                  <img src="../media/svgs/languageicon.svg">
+                  <h4 class="d-inline" style="margin: 1rem"> Language Support
+                  </h4>
+                </li>
+                <li class="d-block">
+                  <img src="../media/svgs/languageicon.svg">
+                  <h4 class="d-inline" style="margin: 1rem"> Language Support
+                  </h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
   </section>
   <script>
