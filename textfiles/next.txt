@@ -1,0 +1,3 @@
+solving the bugs of pages/cic.html - menu(z-index);
+including javascript functionality in cic.html file;
+bug accuring in cic.html - header/scrollbar,header/searchbox(input);l
