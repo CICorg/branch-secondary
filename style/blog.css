@@ -1,0 +1,66 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+hr {
+  opacity: .1 !important;
+}
+
+h5 {
+  font-weight: bold;
+  opacity: .8
+}
+
+button:focus {
+  outline: none;
+  border: none;
+}
+
+.centerme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-none {
+  user-select: none;
+}
+
+.header {
+  box-shadow: .1rem .1rem .8rem lightgrey;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+
+.article-ol {
+  line-height: 1.5rem;
+}
+
+.article-update {
+  user-select: none;
+}
+
+.article-update,
+.article-paragraph,
+.article-ol {
+  color: grey;
+}
+
+#codearea {
+  width: 100%;
+  height:20rem;
+  color: grey;
+}
+
+#codearea:focus {
+  outline: none;
+  border: none;
+}

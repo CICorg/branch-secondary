@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap website layout</title>
+  <!-- Bootstap 5.0.0-->
+  <link rel="stylesheet" href="../res/bootstrap@5.0.0-alpha2.min.css">
+  <link rel="stylesheet" href="../res/chartist.min.css">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- for mediaQuarries -->
+  <link rel="stylesheet" href="style/mediaQuarrie.css">
+  <!-- for Animation -->
+  <link rel="stylesheet" href="../style/animation.css">
+  <!-- for Mstyling -->
+  <link rel="stylesheet" href="../style/blog.css">
+</head>
+
+<body>
+  <header class="container-fluid header bg-white" style="overflow: hidden">
+    <div class="row my-2" style="height: 3rem;">
+      <div class="col-10 user-none">
+        <img src="../media/logo.jpeg" alt="" class="w-25 logo-img">
+      </div>
+      <!-- menu box -->
+      <div class="col-2 centerme">
+        <button id="menuBtn" onclick="show()" class="p-3 menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid" style="background:"> <br><br>
+      <div class="row mt-5">
+        <!-- Main column one -->
+        <div class="col-md-8">
+          <div class="innerbox bg-white p-2 rounded-top">
+            <!-- Header Text -->
+            <h3 class="article-header" id="ArticleHeader">
+            </h3>
+            <!-- Update Text -->
+            <small class="article-update" id="ArticleUpdate">
+            </small>
+            <!-- paragraph Text -->
+            <p class="article-paragraph mt-5" id="ArticlePara"></p>
+            <!-- Related Image Text -->
+            <img src="../media/m.png" alt="" class="w-100 rounded my-3">
+            <!-- List text-->
+            <h5 class="mb-3">Why we use Bootstrap ?</h5>
+            <ol class="article-ol">
+              <li class="article-li">It is Faster and Easier way for Web-Development.</li>
+              <li class="article-li">It creates Platform-independent web-pages.</li>
+              <li class="article-li">It creates Responsive Web-pages.</li>
+              <li class="article-li">It designes the responsive web pages for mobile devices too.</li>
+              <li class="article-li">It is Free and open-source framework available on www.getbootstrap.com</li>
+            </ol>
+            <hr>
+            <!-- Steps -->
+            <div class="codebox bg-dark p-3 rounded clearfix">
+              <h6 class="text-light p-3 m-3 d-inline-block" style="letter-spacing: 1px">CODEBOX</h6>
+              <h6 class="text-secondary p-3 ml-2 m-3 d-inline-block" style="letter-spacing: 1px">HTML</h6>
+              <div class="codebox-inner clearfix">
+                <!--
+                Code Box 
+                -->
+                <textarea id="codearea" class="text-light border border-secondary p-3 rounded bg-dark">
+                </textarea>
+                <!--
+                    Code Box 
+                             -->
+              </div>
+              <button class="btn btn-dark float-right" onclick="copy()">COPY</button>
+            </div>
+          </div>
+        </div>
+        <!-- Main column two -->
+        <div class="col-md-4">
+          <div class="innerbox">
+          </div>
+        </div>
+      </div>
+  </main>
+  <script src="../javascript/Blog01.js"></script>
+</body>
+<!--<script>
+  var copyText = document.getElementById("codearea");
+
+  function copy() {
+    var copyText = document.getElementById("codearea");
+    copyText.select();
+    document.execCommand("copy");
+    alert('Text Copied');
+  }
+</script>-->
+
+</html>

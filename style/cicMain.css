@@ -45,7 +45,7 @@ button:focus {
 }
 
 .header {
-  box-shadow: .1rem .1rem .8rem grey;
+  box-shadow: .1rem .1rem .8rem lightgrey;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -109,7 +109,7 @@ button:focus {
   font-size: .8rem;
   margin: 0;
   padding: 0;
-  opacity: .7;
+  opacity: .5;
 }
 
 /* hover */

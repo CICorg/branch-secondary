@@ -5,10 +5,10 @@
 work on text/weight, opacity,smooting;
 when th menu nar opened(menu btn turns into close btn(and close the panal); 
 Media Quarry; 
-footer
+footer;
+specially for indian;
 
 [
-ids for article header.
-
-
+ids for article header;
+javascript eng ti hi api;
 ]
