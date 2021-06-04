@@ -112,6 +112,11 @@ button:focus {
   opacity: .7;
 }
 
+/* hover */
+a:hover {
+  color: black;
+}
+
 /* AS */
 .degine01 {
   width: 100%;
