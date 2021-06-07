@@ -39,6 +39,22 @@ button:focus {
   z-index: 999;
 }
 
+.menubar {
+  position: fixed;
+  left: 0;
+  z-index: 99;
+  width: 100% !important;
+}
+
+.menubar-inner>a {
+  text-decoration: none;
+  color: grey;
+}
+
+.menubar-inner {
+  background: whitesmoke !important;
+  width: 100% !important;
+}
 
 .article-ol {
   line-height: 1.5rem;
@@ -54,13 +70,54 @@ button:focus {
   color: grey;
 }
 
+.article-paragraph {
+  border-left: 2px whitesmoke solid;
+  padding: 0 0 0 .5rem;
+}
+
 #codearea {
   width: 100%;
-  height:20rem;
+  height: 20rem;
   color: grey;
 }
 
 #codearea:focus {
   outline: none;
   border: none;
+}
+
+.blogmenubarAni {
+  animation: ani2 .5s 1;
+}
+
+/*Animations;
+*/
+
+@keyframes ani2 {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+.layout {
+  width: 100%;
+  margin: 1rem;
+  border-radius: .5rem;
+  background: grey;
+}
+
+
+
+/* for pc */
+@media all and (min-width: 400px) {
+  .layout {
+    width: 40%;
+  }
+
+  .logo-img {
+    margin-top: -10px;
+    width: 100px !important;
+  }
+
 }

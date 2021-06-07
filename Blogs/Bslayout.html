@@ -23,7 +23,7 @@
   <header class="container-fluid header bg-white" style="overflow: hidden">
     <div class="row my-2" style="height: 3rem;">
       <div class="col-10 user-none">
-        <img src="../media/logo.jpeg" alt="" class="w-25 logo-img">
+        <img src="../media/logo.jpeg" alt="refresh page" class="w-25 logo-img">
       </div>
       <!-- menu box -->
       <div class="col-2 centerme">
@@ -35,11 +35,23 @@
       </div>
     </div>
   </header>
+  <!--- Menu bar (hidden)-->
+  <div class="menubar" id="blogmenubar">
+    <div class="menubar-inner bg-white" id="menubarInner">
+      <br> <br> <br> <br>
+      <a href="https://inytch.business.com" class="p-3 d-block">Home (CIC)</a>
+      <a href="#" class="p-3 d-block">Home (Blogs)</a>
+      <a href="#" class="p-3 d-block">Report article</a>
+      <a href="#" class="p-3 d-block">About blogs</a>
+      <a href="#" class="p-3 d-block">Blogs writer</a>
+      <hr>
+    </div>
+  </div>
   <main>
     <div class="container-fluid" style="background:"> <br><br>
       <div class="row mt-5">
         <!-- Main column one -->
-        <div class="col-md-8">
+        <div class="col-md-12">
           <div class="innerbox bg-white p-2 rounded-top">
             <!-- Header Text -->
             <h3 class="article-header" id="ArticleHeader">
@@ -49,54 +61,81 @@
             </small>
             <!-- paragraph Text -->
             <p class="article-paragraph mt-5" id="ArticlePara"></p>
-            <!-- Related Image Text -->
-            <img src="../media/m.png" alt="" class="w-100 rounded my-3">
-            <!-- List text-->
-            <h5 class="mb-3">Why we use Bootstrap ?</h5>
-            <ol class="article-ol">
-              <li class="article-li">It is Faster and Easier way for Web-Development.</li>
-              <li class="article-li">It creates Platform-independent web-pages.</li>
-              <li class="article-li">It creates Responsive Web-pages.</li>
-              <li class="article-li">It designes the responsive web pages for mobile devices too.</li>
-              <li class="article-li">It is Free and open-source framework available on www.getbootstrap.com</li>
-            </ol>
-            <hr>
-            <!-- Steps -->
-            <div class="codebox bg-dark p-3 rounded clearfix">
-              <h6 class="text-light p-3 m-3 d-inline-block" style="letter-spacing: 1px">CODEBOX</h6>
-              <h6 class="text-secondary p-3 ml-2 m-3 d-inline-block" style="letter-spacing: 1px">HTML</h6>
-              <div class="codebox-inner clearfix">
-                <!--
-                Code Box 
-                -->
-                <textarea id="codearea" class="text-light border border-secondary p-3 rounded bg-dark">
-                </textarea>
-                <!--
-                    Code Box 
-                             -->
+            <div class="row">
+              <div class="col-md-6">
+                <!-- Related Image Text -->
+                <img src="../media/bootstrap.jpeg" alt="Refresh Page" class="w-100 rounded my-3">
               </div>
-              <button class="btn btn-dark float-right" onclick="copy()">COPY</button>
+              <div class="col-md-6 centerme">
+                <!-- List text-->
+                <div class="list">
+                  <h5 class="mb-3">Why we use Bootstrap ?</h5>
+                  <ol class="article-ol">
+                    <li class="article-li">It is Faster and Easier way for Web-Development.</li>
+                    <li class="article-li">It creates Platform-independent web-pages.</li>
+                    <li class="article-li">It creates Responsive Web-pages.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- Steps -->
+            <!----Next------>
+          </div>
+          <hr>
+          <h5 class="mb-3">Select Layout</h5>
+          <div class="innerbox d-flex flex-wrap justify-content-center">
+            <div class="layout overflow-hidden bg-dark">
+              <img src="../media/M.png" alt="Layout" class="w-100">
+              <button class="btn btn-dark btn-block text-uppercase">Code</button>
+            </div>
+            <div class="layout overflow-hidden bg-dark">
+              <img src="../media/M.png" alt="Layout" class="w-100">
+              <button class="btn btn-dark btn-block text-uppercase">Code</button>
+            </div>
+            <div class="layout overflow-hidden bg-dark">
+              <img src="../media/M.png" alt="Layout" class="w-100">
+              <button class="btn btn-dark btn-block text-uppercase">Code</button>
+            </div>
+            <div class="layout overflow-hidden bg-dark">
+              <img src="../media/M.png" alt="Layout" class="w-100">
+              <button class="btn btn-dark btn-block text-uppercase">Code</button>
+            </div>
+            <div class="layout overflow-hidden bg-dark">
+              <img src="../media/M.png" alt="Layout" class="w-100">
+              <button class="btn btn-dark btn-block text-uppercase">Code</button>
+            </div>
+            <div class="layout overflow-hidden bg-dark">
+              <img src="../media/M.png" alt="Layout" class="w-100">
+              <button class="btn btn-dark btn-block text-uppercase">Code</button>
             </div>
           </div>
         </div>
-        <!-- Main column two -->
-        <div class="col-md-4">
-          <div class="innerbox">
-          </div>
-        </div>
-      </div>
   </main>
   <script src="../javascript/Blog01.js"></script>
 </body>
-<!--<script>
-  var copyText = document.getElementById("codearea");
+<script>
+  // menu bar : animation and search bar 
+  var x = document.getElementById('blogmenubar');
+  x.style.display = "none";
 
-  function copy() {
-    var copyText = document.getElementById("codearea");
-    copyText.select();
-    document.execCommand("copy");
-    alert('Text Copied');
+  function show() {
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+    } else {
+      x.style.display = 'none';
+    }
+    document.getElementById('menubarInner').classList.add('blogmenubarAni');
   }
-</script>-->
+  var y = document.getElementById('sb');
+  y.style.display = "none";
+
+  function search() {
+    if (y.style.display == 'none') {
+      y.style.display = 'block';
+    } else {
+      y.style.display = 'none';
+    }
+  }
+</script>
 
 </html>
