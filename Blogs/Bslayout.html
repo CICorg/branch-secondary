@@ -64,16 +64,16 @@
             <div class="row">
               <div class="col-md-6">
                 <!-- Related Image Text -->
-                <img src="../media/bootstrap.jpeg" alt="Refresh Page" class="w-100 rounded my-3">
+                <img alt="Refresh Page" class="w-100 rounded my-3" id="article-img">
               </div>
               <div class="col-md-6 centerme">
                 <!-- List text-->
                 <div class="list">
-                  <h5 class="mb-3">Why we use Bootstrap ?</h5>
+                  <h5 class="mb-3" id="li-header">Why we use Bootstrap ?</h5>
                   <ol class="article-ol">
-                    <li class="article-li">It is Faster and Easier way for Web-Development.</li>
-                    <li class="article-li">It creates Platform-independent web-pages.</li>
-                    <li class="article-li">It creates Responsive Web-pages.</li>
+                    <li class="article-li" id="ar-li-0">It is Faster and Easier way for Web-Development.</li>
+                    <li class="article-li" id="ar-li-1">It creates Platform-independent web-pages.</li>
+                    <li class="article-li" id="ar-li-3">It creates Responsive Web-pages.</li>
                   </ol>
                 </div>
               </div>
@@ -84,29 +84,27 @@
           <hr>
           <h5 class="mb-3">Select Layout</h5>
           <div class="innerbox d-flex flex-wrap justify-content-center">
-            <div class="layout overflow-hidden bg-dark">
+            <div class="layout overflow-hidden" onclick="showcode()">
               <img src="../media/M.png" alt="Layout" class="w-100">
-              <button class="btn btn-dark btn-block text-uppercase">Code</button>
+              <div id="layoutCode" style="display: none" class="overflow-scroll">
+                <textarea name="textarea_Q" id=textarea_Q rows="8" cols="38">
+                </textarea>
+              </div>
             </div>
-            <div class="layout overflow-hidden bg-dark">
+            <div class="layout overflow-hidden">
               <img src="../media/M.png" alt="Layout" class="w-100">
-              <button class="btn btn-dark btn-block text-uppercase">Code</button>
             </div>
-            <div class="layout overflow-hidden bg-dark">
+            <div class="layout overflow-hidden">
               <img src="../media/M.png" alt="Layout" class="w-100">
-              <button class="btn btn-dark btn-block text-uppercase">Code</button>
             </div>
-            <div class="layout overflow-hidden bg-dark">
+            <div class="layout overflow-hidden">
               <img src="../media/M.png" alt="Layout" class="w-100">
-              <button class="btn btn-dark btn-block text-uppercase">Code</button>
             </div>
-            <div class="layout overflow-hidden bg-dark">
+            <div class="layout overflow-hidden">
               <img src="../media/M.png" alt="Layout" class="w-100">
-              <button class="btn btn-dark btn-block text-uppercase">Code</button>
             </div>
-            <div class="layout overflow-hidden bg-dark">
+            <div class="layout overflow-hidden">
               <img src="../media/M.png" alt="Layout" class="w-100">
-              <button class="btn btn-dark btn-block text-uppercase">Code</button>
             </div>
           </div>
         </div>
