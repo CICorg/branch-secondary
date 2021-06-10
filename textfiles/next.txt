@@ -7,9 +7,5 @@ when th menu nar opened(menu btn turns into close btn(and close the panal);
 Media Quarry; 
 footer;
 specially for indian;
-
-[
-ids for article header;
-javascript eng ti hi api;
-]
-loading effect fuct
+loading effect fuct;
+s-sys;

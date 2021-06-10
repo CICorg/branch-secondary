@@ -132,57 +132,18 @@ button:focus {
   transition: all .5s;
 }
 
-.s-toggle {
-  position: fixed;
-  bottom: 2rem;
-  right: 2.2rem;
-  z-index: 99999;
-}
-
-.s-toggle:hover {
-  background: lightskyblue;
-  transition: all .5s;
-}
-
-.s-toggle-icon {
-  width: 40px;
-  height: 40px;
-  opacity: .8;
-}
-
 .glass {
-  /* GlassMorphism */
-  background:
-    rgba(255, 255, 255, 0.20);
-  box-shadow:
-    0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter:
-    blur(1.5px);
-  -webkit-backdrop-filter:
-    blur(1.5px);
-  border-radius:
-    10px;
-  border:
-    1px solid rgba(255, 255, 255, 0.18);
-  /* GlassMorphism */
+  background: rgba(255, 255, 255, 0.20);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.s-box {
-  position: fixed;
-  bottom: 5rem;
-  left: 2rem;
-  width: 300px;
-  height: 400px;
-  opacity: .9;
-}
-
-.s-box-design {
-  opacity: .9;
-  width: 3.5rem;
-  height: 4rem;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  position: absolute;
-  bottom: -3.5rem;
-  right: 0rem;
+.s-mbox {
+  height: 5rem;
+  background: palevioletred;
+  margin: .3rem;
+  border-radius: .3rem;
 }
