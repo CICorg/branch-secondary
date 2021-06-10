@@ -12,3 +12,4 @@ specially for indian;
 ids for article header;
 javascript eng ti hi api;
 ]
+loading effect fuct
