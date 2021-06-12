@@ -117,7 +117,19 @@
       animation-delay: 1.5s;
     }
 
+    .alert h3::before {
+      content: "";
+      display: block;
+      /* start form here*/
+      width: 23px;
+      height: 86px;
+      opacity: .5;
+      background: red;
+      position: absolute;
+      z-index: -1;
+      border-radius:.5rem;
 
+    }
 
 
     @keyframes pop {
@@ -139,6 +151,7 @@
         background: white;
         position: fixed;
         top: 0;
+        z-index: 999;
       }
 
       .menu {
@@ -313,8 +326,8 @@
       </main>
     </div>
   </div>
-  <div class="alert">
-    <h3>📵 Not Design For Mobile User</h3>
+  <div class="alert d-flex align-items-center justify-content-center">
+    <h3 class="bg-danger text-white p-3 rounded">📵 Not Design For Mobile User</h3>
   </div>
 </body>
 
